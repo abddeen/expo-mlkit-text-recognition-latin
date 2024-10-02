@@ -41,22 +41,6 @@ export default function App() {
             multiline
           />
         )}
-        {false &&
-          blocks.map((block, i) => (
-            <View key={i} style={{ margin: 12 }}>
-              <Text>{block.text}</Text>
-              {block.lines.map((line, i) => (
-                <View key={i} style={{ margin: 12 }}>
-                  <Text>{line.text}</Text>
-                  {line.elements.map((element, i) => (
-                    <View key={i} style={{ margin: 12 }}>
-                      <Text>{element.text}</Text>
-                    </View>
-                  ))}
-                </View>
-              ))}
-            </View>
-          ))}
         {blocks && blocks.length > 0 && (
           <ImageWithBoundingBoxes imageURL={value} blocks={blocks} />
         )}
@@ -86,7 +70,6 @@ function ImageWithBoundingBoxes({
     block.lines.flatMap((line) => line.elements)
   );
   const textLines = blocks.flatMap((block) => block.lines);
-  console.log(textElements);
   return (
     <View
       style={{
