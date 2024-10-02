@@ -21,14 +21,16 @@
     "expo-mlkit-text-recognition-latin",
     "ExpoMlkitTextRecognitionLatin"
   ],
-  "repository": "https://github.com/abddeen/expo-mlkit-text-recognition-latin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abddeen/expo-mlkit-text-recognition-latin.git"
+  },
   "bugs": {
     "url": "https://github.com/abddeen/expo-mlkit-text-recognition-latin/issues"
   },
   "author": "Hesham Jones <abddeen23@gmail.com> (https://github.com/abddeen)",
   "license": "MIT",
   "homepage": "https://github.com/abddeen/expo-mlkit-text-recognition-latin#readme",
-  "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.0.25",
     "expo-module-scripts": "^3.5.2",
@@ -38,5 +40,8 @@
     "expo": "*",
     "react": "*",
     "react-native": "*"
+  },
+  "directories": {
+    "example": "example"
   }
 }

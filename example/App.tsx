@@ -9,9 +9,9 @@ import {
   TextInput,
   Button,
   View,
-  Text,
   ScrollView,
   Image,
+  Alert,
 } from "react-native";
 
 export default function App() {
@@ -28,9 +28,13 @@ export default function App() {
         <Button
           title="Recognize text"
           onPress={async () => {
-            const r = await TextRecognition.recognize(value);
-            setResult(r.text);
-            setBlocks(r.blocks);
+            try {
+              const r = await TextRecognition.recognize(value);
+              setResult(r.text);
+              setBlocks(r.blocks);
+            } catch (e) {
+              Alert.alert("Error", e.message);
+            }
           }}
         />
         {result && (
