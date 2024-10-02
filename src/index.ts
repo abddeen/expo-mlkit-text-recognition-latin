@@ -1,4 +1,4 @@
-import { TextBlock } from "./ExpoMlkitTextRecognitionLatin.types";
+import { TextBlock, TextElement } from "./ExpoMlkitTextRecognitionLatin.types";
 import TextRecognition from "./ExpoMlkitTextRecognitionLatinModule";
 
-export { TextRecognition, TextBlock };
+export { TextRecognition, TextBlock, TextElement };
