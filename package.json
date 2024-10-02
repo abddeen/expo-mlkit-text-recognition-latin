@@ -1,7 +1,7 @@
 {
   "name": "expo-mlkit-text-recognition-latin",
-  "version": "0.1.0",
-  "description": "Expo Module Wrapper for MLKit Text Recognition (Latin only)",
+  "version": "1.0.0",
+  "description": "Expo Module Wrapper for Google MLKit Text Recognition (Latin only)",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
